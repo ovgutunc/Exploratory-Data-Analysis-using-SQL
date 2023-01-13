@@ -118,6 +118,29 @@ GROUP BY Sport ORDER BY COUNT(DISTINCT(name)) DESC LIMIT 5;
 SELECT name AS Name,Sport,COUNT(Medal) AS "Number of Medals" FROM athlete_events_clean
 WHERE Sex="F" AND Medal!="MNW" GROUP BY name,sport ORDER BY COUNT(Medal) DESC LIMIT 3;
 ```
+**12) Who has the most Olympic medals among male?**<br>
+```
+SELECT name AS Name,Sport,COUNT(Medal) AS "Number of Medals" FROM athlete_events_clean
+WHERE Sex="M" AND Medal!="MNW" GROUP BY name,sport ORDER BY COUNT(Medal) DESC LIMIT 3;
+```
+**13) Who is the first youngest athlete with a gold medal and in which sport? **<br>
+```
+SELECT age,name,sport,year FROM athlete_events_clean
+WHERE medal="Gold" AND age=
+                            (SELECT MIN(age) FROM athlete_events_clean WHERE medal="Gold")
+ORDER BY year;
+```
+**14) Who is the oldest athlete with a gold medal and in which sport?**<br>
+```
+SELECT age,name,sport,year FROM athlete_events_clean
+WHERE medal="Gold" AND age=
+                        (SELECT max(age) FROM athlete_events_clean WHERE medal="Gold");
+```
+**15) Which sports are seniors participated in Olympics ? (60+) **<br>
+```
+SELECT sport,COUNT(DISTINCT(name)) AS "Number of Athletes" FROM athlete_events_clean
+WHERE age>60 GROUP BY sport ORDER BY COUNT(DISTINCT(name)) DESC;
+```
 
 ## **Results & Insights:**
 
