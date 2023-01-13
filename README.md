@@ -18,7 +18,9 @@ The comprehensive dataset (Athlete_Events) of Olympic Games from 1896 Athens Oly
 •	**Sport** - Sport<br />
 •	**Event** - Event<br />
 •	**Medal** - Gold, Silver, Bronze, or NA.<br />
+
 The second dataset (Country_Definitions) has 230 rows and 3 attributes.The attributes are as follows:<br />
+
 •	**NOC** - National Olympic Committee 3-letter code<br />
 •	**Region** - Country<br />
 •	**Notes** - Extra information about Country<br />
