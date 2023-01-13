@@ -28,7 +28,14 @@ The second dataset (Country_Definitions) has 230 rows and 3 attributes.The attri
 
 ## **Data Cleaning:**
 **•	Missing Values Handling:**<br />
+4 out of 15 columns comprising Age, Height, Weight, and Medal have missing values. 
+•Age - 9474
+•Height - 60171
+•Weight - 62875
+•Medal - 231332
+It is worth noting that Medal column has lots of NAN value because all sports have only three winners. In that matter, NaN values are replaced with "NWM" standing for "Not Won Medal". The rest of the numeric columns' missing values are replaced with mean values of their column.
 **•	Duplicated Values Handling:**<br />
+
 **•	Dropping Unnecessary Attributes:**<br />
 
 
