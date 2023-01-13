@@ -40,8 +40,11 @@ It is worth noting that Medal column has lots of NAN value because all sports ha
 
 **•	Duplicated Values Handling:**<br />
 
+In Athlete_Events dataset has 1385 duplicated records. By using Pandas library, duplicated records are dropped.
+
 **•	Dropping Unnecessary Attributes:**<br />
 
+Prior to data analysis of the dataset, column Games in Athlete_Events and column notes in Country_Definitions are removed due to redundancy.
 
 ## **Data Analysis:**
 ## **Results & Insights:**
