@@ -68,23 +68,56 @@ GROUP BY cd.Country,ac.Medal ORDER BY cd.Country DESC, COUNT(ac.Medal) DESC ;
 ```
 SELECT Country,Sport,MAX(medal_count) AS "Number of Medal"
 FROM
-    (SELECT cd.Country,ac.Sport,COUNT(ac.Medal) AS medal_count 
-     FROM athlete_events_clean ac
-     JOIN country_definitions cd
-     ON ac.NOC=cd.NOC
+    (SELECT cd.Country,ac.Sport,COUNT(ac.Medal) AS medal_count FROM athlete_events_clean ac
+     JOIN country_definitions cd ON ac.NOC=cd.NOC
      WHERE ac.Medal!="MNW" AND cd.Country IN("USA","Russia","Germany","UK","France")
-     GROUP BY ac.sport,cd.Country
-     ORDER BY medal_count DESC) AS sub
+     GROUP BY ac.sport,cd.Country ORDER BY medal_count DESC) AS sub
 GROUP BY Country;
 ```
-
-
-
-
-
-
-
-
+**4) What are the top 5 countries that have won the most gold medals?**<br>
+```
+SELECT cd.Country,COUNT(ac.Medal) AS "Gold Medal Number" FROM athlete_events_clean ac
+JOIN country_definitions cd ON ac.NOC=cd.NOC
+WHERE ac.Medal="Gold" GROUP BY cd.Country ORDER BY COUNT(ac.Medal) DESC LIMIT 5 ;
+```
+**5) How is the number of medalists changing in Summer Olympics by gender over the years ?**<br>
+```
+SELECT ac.Year,ac.Sex,COUNT(ac.Medal) AS "Medal Number" FROM athlete_events_clean ac
+JOIN country_definitions cd ON ac.NOC=cd.NOC
+WHERE ac.Medal!="MNW" AND ac.Season="Summer" GROUP BY ac.Year,ac.Sex ORDER BY ac.Year DESC,ac.Sex DESC;
+```
+**6) How is the participation of athletes changing by gender in Summer Olympics over the years ?**<br>
+```
+SELECT ac.year,ac.Sex,COUNT(DISTINCT(ac.name)) AS "Number of Athletes" FROM athlete_events_clean ac
+JOIN country_definitions cd ON ac.NOC=cd.NOC
+WHERE ac.Season="Summer" GROUP BY ac.Year,ac.Sex ORDER BY ac.Year DESC;
+```
+**7) What are the height and weight of medalists by sport ?**<br>
+```
+SELECT Name,Sport,Height,Weight FROM athlete_events_clean 
+WHERE Medal!="MNW" GROUP BY Name ORDER BY Sport;
+```
+**8) What are the average Weight/Height ratios of medalists by sport ?**<br>
+```
+SELECT Sport,AVG(Weight/Height) AS "Average of Weight/Height Ratios" FROM athlete_events_clean 
+WHERE Medal!="MNW" GROUP BY Sport ORDER BY AVG(Weight/Height) DESC;
+```
+**9) What are the distribution of Height and Weight of medalists for Rhythmic Gymnastics and Weightlifting ?**<br>
+```
+SELECT Name,Sport,Height,Weight FROM athlete_events_clean 
+WHERE Medal!="MNW" AND Sport IN("Rhythmic Gymnastics","Weightlifting")
+GROUP BY Name ORDER BY Sport;
+```
+**10) What are the most popular Sports in Olympics ?**<br>
+```
+Select Sport, COUNT(DISTINCT(name)) AS "Number of Athletes" FROM athlete_events_clean
+GROUP BY Sport ORDER BY COUNT(DISTINCT(name)) DESC LIMIT 5;
+```
+**11) Who has the most Olympic medals among female?**<br>
+```
+SELECT name AS Name,Sport,COUNT(Medal) AS "Number of Medals" FROM athlete_events_clean
+WHERE Sex="F" AND Medal!="MNW" GROUP BY name,sport ORDER BY COUNT(Medal) DESC LIMIT 3;
+```
 
 ## **Results & Insights:**
 
