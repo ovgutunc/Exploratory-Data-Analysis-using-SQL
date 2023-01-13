@@ -48,7 +48,8 @@ Prior to data analysis of the dataset, column Games in Athlete_Events and column
 
 ## **Data Analysis Using SQL:**
 
-To get better insights about the dataset, SQL queries and Python are used to complement each other. The SQL queries are provied as follows:
+To get better insights about the dataset, SQL queries and Python are used to complement each other. The SQL queries are provied as follows:<br>
+
 **1) What are the top 10 countries which have won medals the most ?** <br>
 ```
 SELECT cd.Country,COUNT(ac.Medal) AS "Total Medal Number" FROM athlete_events_clean ac
