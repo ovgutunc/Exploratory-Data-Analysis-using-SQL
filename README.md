@@ -26,9 +26,10 @@ The second dataset (Country_Definitions) has 230 rows and 3 attributes.The attri
 •	**Notes** - Extra information about Country<br />
 
 ## **Data Cleaning:**
-**-Missing Values Handling**<br />
-**-Duplicated Values Handling**<br />
-**-Dropping Unnecessary Atributes**<br />
+**•	Missing Values Handling**<br />
+**•	Duplicated Values Handling**<br />
+**•	Dropping Unnecessary Attributes**<br />
+
 
 ## **Data Analysis:**
 ## **Results & Insights:**
