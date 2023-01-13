@@ -2,6 +2,7 @@
 ## **Problem Statement:**
 ## **Data Acquisition:**
 The comprehensive dataset (Athlete_Events) of Olympic Games from 1896 Athens Olympics to 2016 Rio Olympics contains 271116 rows and 15 attributes.Each row corresponds to an individual athlete competing in an individual Olympic event.The attributes are as follows:<br />
+
 •	**ID** - Unique number for each athlete <br />
 •	**Name** - Athlete's name<br />
 •	**Sex** - M or F<br />
