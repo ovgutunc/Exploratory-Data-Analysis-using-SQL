@@ -57,6 +57,33 @@ JOIN country_definitions cd ON ac.NOC=cd.NOC
 WHERE ac.Medal!="MNW" GROUP BY cd.Country ORDER BY COUNT(ac.Medal) DESC LIMIT 10 ;
 ```
 
+**2) What is the break-up of medal tallies by medal types for the top 5 countries ?**<br>
+```
+SELECT cd.Country,ac.Medal,COUNT(ac.Medal) AS "Total Medal Number" FROM athlete_events_clean ac
+JOIN country_definitions cd ON ac.NOC=cd.NOC
+WHERE ac.Medal IN ("Gold","Bronze","Silver") AND cd.Country IN("USA","Russia","Germany","UK","France")
+GROUP BY cd.Country,ac.Medal ORDER BY cd.Country DESC, COUNT(ac.Medal) DESC ;
+```
+**3) In which sports do the top 5 countries have the best performance ?**<br>
+```
+SELECT Country,Sport,MAX(medal_count) AS "Number of Medal"
+FROM
+    (SELECT cd.Country,ac.Sport,COUNT(ac.Medal) AS medal_count 
+     FROM athlete_events_clean ac
+     JOIN country_definitions cd
+     ON ac.NOC=cd.NOC
+     WHERE ac.Medal!="MNW" AND cd.Country IN("USA","Russia","Germany","UK","France")
+     GROUP BY ac.sport,cd.Country
+     ORDER BY medal_count DESC) AS sub
+GROUP BY Country;
+```
+
+
+
+
+
+
+
 
 
 ## **Results & Insights:**
