@@ -52,3 +52,24 @@ To get better insights about the dataset, SQL queries and Python are used to com
 
 
 ## **Results & Insights:**
+
+•	The overall trend in the number of athletes has been gradually increasing for both female and male athletes over the years. In fact, the trend rate of female participation has been increasing significantly since 1980.However, 1932, 1956, and 1980 experienced a drastic fall in male participation. It can be explained by two main reasons:<br>
+
+>-In 1932 Olympics, due to Great Depression, many countries were unable to afford to send teams to compete, resulting in a lower number of participations.<br>
+>-In 1956 and 1980 Olympics, because of the boycotts of some countries over political issues, the participation was highly restricted.<br>
+
+•	The success of female athletes has been constantly growing in terms of medal count in Summer Olympics. Over the last 5 Olympics, female and male athletes have won almost the same amount of medal. Now, women represent themselves and their countries equally.<br>
+
+•	The United States of America, Russia, and Germany are medal tally leaders from 1896 to 2016 Olympics. They have the best performance in Athletics, Gymnastics, and Rowing respectively. It can be a result of investing highly in sports development and training, and having an opportunity to participate consistently.<br>
+
+•	Athletics, Swimming, Rowing, Football, and Cycling can be considered the most popular sports in Olympics from the perspective of the number of athletes as a metric.<br>
+
+•	Most athletes show a linear relationship between weight and height pertaining to the sport. However, Sports like Weightlifting have a higher weight/height ratio while other sports like Rhythmic Gymnastics have a lower weight/height ratio.<br>
+
+•	The athletes holding the world record from 1896 to 2016 Olympics are as follows:<br>
+
+>-Larisa Semyonovna Latynina with the most Olympic gold medals as a female gymnast<br>
+>-Michale Phelps with the most Olympic gold medals as a male swimmer<br>
+>-Aileen Muriel Riggin with the youngest Olympic gold medalist at 13 as a female diver<br>
+>-Charles Jacobus with the oldest Olympic gold medalist at 64 as a male roque player<br>
+
