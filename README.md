@@ -46,5 +46,9 @@ In Athlete_Events dataset has 1385 duplicated records. By using Pandas library, 
 
 Prior to data analysis of the dataset, column Games in Athlete_Events and column notes in Country_Definitions are removed due to redundancy.
 
-## **Data Analysis:**
+## **Data Analysis Using SQL:**
+
+To get better insights about the dataset, SQL queries and Python are used to complement each other. The SQL queries are provied as follows:
+
+
 ## **Results & Insights:**
