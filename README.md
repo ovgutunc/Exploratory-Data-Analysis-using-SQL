@@ -1,7 +1,7 @@
 # **120-Years-of-Olympic-History-Data-Analysis-using-SQL**
 ## **Problem Statement:**
 The purpose of this project is to provide a comprehensive overview of the trends and patterns in Olympic Games by considering information about participation, performance, sport, country, athletes, gender, age, height, and weight. The aim is to gain a more in-depth understanding of the data in compliance with SQL and Python.<br>
-To get further information about data analysis and visualization, please check out **[Jupyter Notebook](https://github.com/ovgutunc/120-Years-of-Olympic-History-Data-Analysis-using-SQL/blob/main/olympics_history_data_analysis.ipynb).**  
+To get further information about data analysis and visualization of the datasets, please check out **[Jupyter Notebook](https://github.com/ovgutunc/120-Years-of-Olympic-History-Data-Analysis-using-SQL/blob/main/olympics_history_data_analysis.ipynb).**  
 ## **Data Acquisition:**
 The comprehensive dataset (Athlete_Events) of Olympic Games from 1896 Athens Olympics to 2016 Rio Olympics contains 271116 rows and 15 attributes.Each row corresponds to an individual athlete competing in an individual Olympic event.The attributes are as follows:<br />
 
