@@ -167,3 +167,5 @@ WHERE age>60 GROUP BY sport ORDER BY COUNT(DISTINCT(name)) DESC;
 >-Aileen Muriel Riggin with the youngest Olympic gold medalist at 13 as a female diver<br>
 >-Charles Jacobus with the oldest Olympic gold medalist at 64 as a male roque player<br>
 
+_Thank you for your precious time.I hope you enjoy my data world as much as ı do._<br>
+_Keep grinding !_
