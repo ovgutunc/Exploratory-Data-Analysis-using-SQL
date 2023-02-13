@@ -1,4 +1,4 @@
-# **120-Years-of-Olympic-History-Data-Analysis-using-SQL**
+# **120-Years-of-Olympic-History-Exploratory Data-Analysis-using-SQL**
 ## **Problem Statement:**
 The purpose of this project is to provide a comprehensive overview of the trends and patterns in Olympic Games by considering information about participation, performance, sport, country, athletes, gender, age, height, and weight. The aim is to gain a more in-depth understanding of the data in compliance with SQL and Python.<br>
 
